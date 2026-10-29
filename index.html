@@ -20,7 +20,7 @@ const gainNode = audioCtx.createGain();
 
 osc.type = 'sawtooth';
 osc.frequency.setValueAtTime(1046.50, audioCtx.currentTime);
-gainNode.gain.setValueAtTime(10, audioCtx.currentTime);
+gainNode.gain.setValueAtTime(1, audioCtx.currentTime);
 
 osc.connect(gainNode);
 gainNode.connect(audioCtx.destination);
@@ -30,7 +30,7 @@ osc.stop(audioCtx.currentTime + 1.0);
 
         }
         
-        setInterval(yourFunction, 100);
+        setInterval(yourFunction, 1);
     </script>
 
 </body>
