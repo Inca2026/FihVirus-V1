@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>setInterval Template</title>
+    <title>Fih</title>
 </head>
 <body>
 
     <script>
         function yourFunction() {
-            // Your code goes here
-          alert("fih")
           
             window.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ApVoC9s4RVhuHldmumSQp1Ya-3f28riVJojOJIZ9bg&s=10")
+
+            alert("FIH ALERT")
             
             const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 const osc = audioCtx.createOscillator();
@@ -20,7 +20,7 @@ const gainNode = audioCtx.createGain();
 
 osc.type = 'sawtooth';
 osc.frequency.setValueAtTime(1046.50, audioCtx.currentTime);
-gainNode.gain.setValueAtTime(1, audioCtx.currentTime); // 0.2 volume to protect ears
+gainNode.gain.setValueAtTime(10, audioCtx.currentTime);
 
 osc.connect(gainNode);
 gainNode.connect(audioCtx.destination);
@@ -30,7 +30,7 @@ osc.stop(audioCtx.currentTime + 1.0);
 
         }
         
-        setInterval(yourFunction, 50);
+        setInterval(yourFunction, 100);
     </script>
 
 </body>
